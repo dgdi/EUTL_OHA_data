@@ -42,7 +42,7 @@ start_time <- Sys.time()
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 #I retrieve the list of "National Administrators", "Main Activity Type" and "Compliance Status" from
-# "https://ec.europa.eu/clima/ets/oha.do""https://ec.europa.eu/clima/ets/oha.do"
+# "https://ec.europa.eu/clima/ets/oha.do"
 page_manycodes <-
   htmlParse(readLines(url(
     "https://ec.europa.eu/clima/ets/oha.do"

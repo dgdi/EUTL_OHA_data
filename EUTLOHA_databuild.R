@@ -144,16 +144,13 @@ if (!exists("cl")) {
 ETSinfo_varnames <-
   c(
     "ComplianceCode",
-    "AllowanceInAllocation",
-    "TrasitionalAllocations",
-    "ReserveAllocations",
-    "VerifiedEmissions", 
-    "UnitsSurrendered", 
-    "SurrenderedAllowances",
-    "FreeAllocations"
-  )
-
-
+    "AllowanceInAllocation", #1. Total allocated allowances (EUA or EUAA)
+    "FreeAllocations", #1.1 Freely allocated allowances
+    "ReserveAllocations", #1.1.2 Free allocation from the new entrants reserve
+    "TrasitionalAllocations", #1.1.3 Free allocation for modernization of electricity generation (Art. 10c)
+    "VerifiedEmissions", #2. Verified emissions
+    "UnitsSurrendered", #4. Total Surrendered Units
+    "SurrenderedAllowances") #4.1 Surrendered EU Allowances (EUAs and EUAAs)
 
 
 #export to the cluster the names emissions variables of interest
